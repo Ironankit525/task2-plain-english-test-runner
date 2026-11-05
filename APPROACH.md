@@ -83,7 +83,7 @@ The demoblaze miss was a false failure: the AI judged the cart before its rows h
 - **CAPTCHAs aren't solved.** The tool stops with ERROR.
 - **Canvas-only pages are unsupported,** because actions need a real page element. The AI can see a screenshot, but it can't click coordinates.
 - **Text that flashes up and disappears** is only caught when it's added to the page. A message that was already there and just gets shown isn't.
-- **The backup provider is only partly proven.** The tool supports any OpenAI-compatible service, tested with a simulated server. With Qwen through BharatCode, a real request answered after about 4 minutes in the provider's queue. My first attempts gave up too early, so I added streaming to wait in the queue. At that speed it's a slow backup, not a practical main model, and I haven't yet seen it complete a whole test.
+- **The backup provider is slow and lightly tested.** The tool supports any OpenAI-compatible service. Qwen through BharatCode's free queue completed one real test correctly, a 2-step dropdown test, but took about 18 minutes for 3 AI calls. My first attempts gave up too early, so I added streaming to wait in the queue. At that speed it's a backup, not a practical main model, and I've only run that one test on it.
 - **The site-specific tests depend on live demo sites,** which can change or go down.
 
 ## What I'd do next
