@@ -1,0 +1,14 @@
+[
+  {"id": 1, "site": "phptravels", "url": "https://phptravels.net", "test": "Log in as a customer and verify the dashboard is shown", "expected": "PASS", "needs_credentials": true},
+  {"id": 2, "site": "phptravels", "url": "https://phptravels.net/login", "test": "Log in with the email nobody@example.com and a wrong password, and verify an error appears", "expected": "PASS"},
+  {"id": 3, "site": "phptravels", "url": "https://phptravels.net/login", "test": "Log in with the email nobody@example.com and a wrong password, and verify the dashboard is shown", "expected": "FAIL"},
+  {"id": 4, "site": "phptravels", "url": "https://phptravels.net", "test": "Search for hotels in Dubai and verify results are shown", "expected": "PASS"},
+  {"id": 5, "site": "saucedemo", "url": "https://www.saucedemo.com", "test": "Log in as standard_user, add a backpack to the cart, and verify the cart shows 1", "expected": "PASS"},
+  {"id": 6, "site": "saucedemo", "url": "https://www.saucedemo.com", "test": "Log in as locked_out_user and verify the products page is shown", "expected": "FAIL"},
+  {"id": 7, "site": "saucedemo", "url": "https://www.saucedemo.com", "test": "Log in as standard_user, buy a backpack by completing checkout, and verify the confirmation message", "expected": "PASS"},
+  {"id": 8, "site": "the-internet", "url": "https://the-internet.herokuapp.com/login", "test": "Log in with valid details and verify the secure area appears", "expected": "PASS"},
+  {"id": 9, "site": "the-internet", "url": "https://the-internet.herokuapp.com/dropdown", "test": "Select Option 2 from the dropdown and verify it's selected", "expected": "PASS"},
+  {"id": 10, "site": "the-internet", "url": "https://the-internet.herokuapp.com/login", "test": "Log in with valid details and verify the page says \"Welcome to Mars\"", "expected": "FAIL"},
+  {"id": 11, "site": "unreachable", "url": "https://nonexistent.invalid", "test": "Open the home page and verify the logo is shown", "expected": "ERROR"},
+  {"id": 12, "site": "phptravels", "url": "https://phptravels.net/login", "test": "Log in as a customer and verify the dashboard is shown", "expected": "ERROR"}
+]

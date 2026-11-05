@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html><head><title>Test Shop</title></head>
+<body>
+<h1>Sign in</h1>
+<form onsubmit="event.preventDefault(); check();">
+  <label for="e">Email</label><input id="e" type="text">
+  <label for="p">Password</label><input id="p" type="password">
+  <button type="submit">Sign in</button>
+</form>
+<p id="message"></p>
+<select id="size" aria-label="Size"><option>Small</option><option>Large</option></select>
+<script>
+function check() {
+  const ok = document.getElementById('e').value === 'shopper@example.com'
+    && document.getElementById('p').value === 's3cret-pass';
+  document.getElementById('message').textContent = ok ? 'Welcome back, shopper@example.com' : 'Wrong password';
+}
+</script>
+</body></html>
